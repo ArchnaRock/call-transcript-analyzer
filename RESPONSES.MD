@@ -1,7 +1,5 @@
 # Written Responses — Senior AI Engineer Challenge
 
----
-
 **Question 1 — Production Incident**
 
 The first thing I would do is confirm the issue with data, not assumptions. I’d check logs, recent responses, and metrics to verify that ~20% of responses are indeed returning a null QA score and identify when it started. Since there are no errors being thrown, this points to a silent failure—most likely an issue with how we’re parsing or validating the LLM response.
