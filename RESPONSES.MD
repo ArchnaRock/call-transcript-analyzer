@@ -1,4 +1,8 @@
-Question 1 — Production Incident
+# Written Responses — Senior AI Engineer Challenge
+
+---
+
+**Question 1 — Production Incident**
 
 The first thing I would do is confirm the issue with data, not assumptions. I’d check logs, recent responses, and metrics to verify that ~20% of responses are indeed returning a null QA score and identify when it started. Since there are no errors being thrown, this points to a silent failure—most likely an issue with how we’re parsing or validating the LLM response.
 
@@ -10,7 +14,7 @@ Then I’d review recent changes—prompt edits, model version changes, or parsi
 
 Finally, I’d add monitoring for output quality (not just errors) to catch similar issues earlier in the future.
 
-Question 2 — Ambiguous Requirements
+**Question 2 — Ambiguous Requirements**
 
 Given the ambiguity, I’d start by narrowing the problem into something deliverable quickly while keeping future scalability in mind. My first step would be to clarify expectations with the founder—specifically what “search by topic” means in practice and what a good result looks like. But I wouldn’t block on that; I’d move forward with a reasonable assumption.
 
